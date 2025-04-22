@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayako</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/project.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="navigation">
+        <section class="navigation">
+          <div class="container">
+              <div class="box-navigation animate__animated animate__flipInX">
+                  <div class="box">
+                      <img src="images/home/naya's logo.png" alt="">
+                  </div>
+                  <div class="box menu-navigation">
+                      <ul>
+                          <li>
+                              <i class="ri-home-3-line" style="color: white;"></i>
+                              <a href="home.html">Home</a>
+                          </li>
+                          <li>
+                              <i class="ri-information-2-line" style="color: white;"></i>
+                              <a href="about.html">About</a>
+                          </li>
+                          <li>
+                              <i class="ri-pages-line" style="color: white;"></i>
+                              <a href="project.html">Project</a>
+                          </li>
+                          <li>
+                              <i class="ri-news-line " style="color: white;"></i>
+                              <a href="blog.html">Blog</a>
+                          </li>
+                          <li>
+                              <i class="ri-phone-line" style="color: white;"></i>
+                              <a href="contact.html">Contact</a>
+                          </li>
+                      </ul>
+      
+                  </div>
+                  <div class="box menu-bar" id="hamburger">
+                      <i class="ri-menu-3-fill" style="color: white;"></i>
+                  </div>
+      
+              </div>
+      
+          </div>
+      
+        </section>
+    </header>
+    
+    <section id="project2">
+        <div class="box-project2">
+        <div class="box-project">
+        <div class="garis-samping">
+            ..
+        </div>
+        <div class="head-judul-project">
+            <h1>Bisdig Social Media Team</h1>
+        </div>
+    </div>
+        <p class="p-project">As a Graphic Designer on the Bisdig Social Media Team, I played a key role in bringing the Digital Business Study Program's Instagram to life. Through creative and visually engaging designs, I helped amplify the program's online presence, connect with the community, and highlight student achievements in a dynamic and impactful way.</p>
+        <div class="button-project">
+            <button class="button-project2"><a href="#glimpse">Instagram Feeds</a></button>
+            <button class="button-project2"><a href="#glimpse-2">Instagram Story</a></button>
+        </div>    
+    </div>
+    </section>
+
+    <section id="box-pembatas">
+        <div class="pembatas">
+            <div class="sub-bisdig">
+                <h3>Bisdig Social Media Team</h3>
+            </div>
+            <img src="/images/project/Asterisk 2.png" alt="">
+            <div class="sub-bisdig">
+                <h3>Bisdig Social Media Team</h3>
+            </div>
+            <img src="/images/project/Asterisk 2.png" alt="">
+            <div class="sub-bisdig">
+                <h3>Bisdig Social Media Team</h3>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="glimpse">
+        <div class="judul"> <p>Instagram Feeds</p>
+            
+        </div>
+        <div class="gambar">
+            <img src="images/project/18 1.png " alt="">
+            <img src="images/project/22 2.png " alt="">
+            <img src="images/project/13 1.png " alt="">
+            <img src="images/project/12 2.png " alt="">
+            <img src="images/project/17 1.png " alt="">
+            <img src="images/project/16 1.png " alt="">
+            
+        </div>
+         <div class="button-moreinfo">
+            <p>Slide for more content</p>
+        </div>
+      </section>
+
+      <section id="glimpse-2">
+        <div class="judul"> <p>Instagram Story</p>
+            
+        </div>
+        <div class="gambar2">
+            <img src="images/project/12 1.png " alt="">
+            <img src="images/project/20 24.png " alt="">
+            <img src="images/project/13 1.png " alt="">
+            <img src="images/project/15 1.png " alt="">
+            
+        </div>
+         <div class="button-moreinfo">
+            <p>Slide for more content</p>
+        </div>
+      </section>
+
+
+      <footer id="footer"></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    
+    const footer = document.getElementById('footer');
+   
+    fetch('./footer.html').then(snap => snap.text()).then(result =>{
+        footer.innerHTML = result;
+    })
+</script>
+<script src="script.js"></script>
+</html>

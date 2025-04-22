@@ -1,0 +1,959 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+
+/* Reset Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+/* Root Variables */
+
+
+html {
+    /* font-size: 62.5%; */
+    scroll-behavior: smooth;
+    background-color: #000000;
+    
+  }
+
+.container{
+    width: 80%;
+    margin-inline: auto;
+}
+header{
+    width: 100%;
+    height: 30vh;
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.navigation{
+    width: 100%;
+    padding: 20px 0 25px 0;
+    
+}
+
+.navigation .box-navigation .box:nth-child(1) img{
+   width: 60px;
+   height: auto;
+}
+
+.navigation .box-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-left: 150px; */
+    align-items: center;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: -50px; /* Menggeser ke kiri */
+
+}
+.navigation .box-navigation .box:nth-child(2) ul li{
+    list-style-type: none;
+    margin-left: 25px;
+}
+.navigation .box-navigation .box:nth-child(2) ul li a{
+    text-decoration: none;
+    color: white; 
+}
+.navigation .box-navigation .box:nth-child(2) ul li a:hover{
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+    border: 1px solid white; /* Warna garis pinggir oval */
+    padding: 2px 8px; /* Jarak teks dengan garis pinggir */
+    border-radius: 50px; /* Membuat bentuk oval */
+    display: inline-block; 
+    
+}
+
+
+
+.navigation .box-navigation .box:nth-child(3) {
+    display: none;
+}
+.navigation .box-navigation .box:nth-child(2) ul li i{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navigation .box-navigation .box:nth-child(2) {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        color: #000000;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        z-index: 1;
+        border-radius: 50px;
+        
+    }
+
+    .navigation .box-navigation .box:nth-child(2).menu-active {
+        display: flex;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul li {
+        margin: 15px 0;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) ul li i {
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    /* ✅ Tambahkan ini supaya hamburger menu muncul */
+    .navigation .box-navigation .box:nth-child(3) {
+        display: block;
+        cursor: pointer;
+    }
+    .menu-navigation {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .menu-active {
+        opacity: 1;
+    }
+    
+    .menu-bar {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .menu-bar.clicked {
+        transform: rotate(90deg); /* Animasi untuk hamburger berubah saat klik */
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* bagian HOME */
+#home{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translate(0%, -20%);  /* Atur posisi supaya tidak terlalu tinggi */
+}
+
+#home .box-home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#home .box-home .box:nth-child(1){
+    padding-right: 30px;
+}
+
+#home .box-home .box:nth-child(1) h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+#home .box-home .box:nth-child(1) p{
+    line-height: 2;
+    color: #ffffff;
+    font-size: 17px;
+    
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #EAE2D7; /* Warna latar belakang */
+    border-radius: 30px; /* Agar melengkung */
+    width: 350px; /* Menentukan lebar maksimal */
+
+}
+
+button {
+    border: none;
+    padding: 10px 2px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+
+.button1 {
+    background-color: transparent;
+    color: #8B3D62; /* Warna teks */
+    flex: 1; /* Agar melebar */
+}
+
+.button2 {
+    background-color: #8B3D62; /* Warna ungu gelap */
+    color: white;
+    flex: 1;
+    
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#home .box-home .box:nth-child(2) img{
+    width: 450px;
+    height: auto;
+}
+/* Glimpse og my work */
+.glimpse{
+    background-color: #9C3165;
+    border-radius: 50px;
+}
+.judul{
+    padding: 20px;
+}
+.judul h1{
+    font-size: 42px; /* Sesuaikan ukuran font */
+    font-weight: bold;
+    color: #EE4095; /* Warna teks */
+    text-align: center;
+    justify-content: center;
+    padding: 1px 30px; /* Ruang dalam */
+    border-radius: 25px; /* Membuat sudut membulat */
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+.gambar{
+    display: flex;
+    overflow-x: auto; /* Memungkinkan scroll horizontal */
+    white-space: nowrap; /* Mencegah gambar turun ke bawah */
+    width: 100%;
+    padding: 10px;
+    gap: 10px; /* Jarak antar gambar */
+    scrollbar-width: none; /* Sembunyikan scrollbar di Firefox */
+    /* margin-bottom: 35px; */
+    -ms-overflow-style: none; /* Sembunyikan scrollbar di IE/Edge */
+}
+.gambar::-webkit-scrollbar {
+    display: none; /* Sembunyikan scrollbar di Chrome, Safari */
+}
+
+.gambar img{
+    width: 350px;
+    height: auto;
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+
+.button-moreinfo {
+    display: flex;
+    justify-content: center; /* Pusatkan tombol */
+    align-items: center;
+    padding-bottom: 15px;
+    margin-top: 11px;
+}
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    background: #f5ede6; /* Warna latar belakang tombol */
+    border: none;
+    border-radius: 20px;
+    padding: 1px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  
+}
+
+
+
+.text {
+    background: #ff0080;
+    color: white;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 20px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.read-my-blog {
+    margin-top: 30px;
+    background-color: #D09B27;
+    border-radius: 50px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Agar kedua elemen sejajar horizontal */
+   gap: 30px;
+   margin-bottom: 150px;
+}
+.text-blog{
+    padding: 20px 50px;
+}
+
+/* Judul utama */
+.text-blog h1 {
+    color: #EE4095;
+    background-color: #ffffff;
+    border-radius: 30px;
+    font-size: 42px;
+    display: inline-block;
+    padding: 1px 30px;
+    font-weight: bold;
+}
+
+/* Subjudul */
+.text-blog h2 {
+    padding-top: 30px;
+    font-style: italic;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/* Judul artikel */
+.text-blog h3 {
+    /* padding: 15px 0px; */
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Paragraf */
+.text-blog p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.button-morearticles {
+    display: flex;
+    justify-content: flex-end; /* Pusatkan tombol */
+    align-items: center;
+    /* padding-bottom: 50px; */
+    margin-top: 10px;
+
+}.button-morearticles {
+    display: flex;
+    justify-content: center; /* Pusatkan tombol */
+    align-items: center;
+    /* padding-bottom: 50px; */
+    margin-top: 10px;
+    margin-left: 440px;
+}
+
+.custom-button2 {
+    display: flex;
+    align-items: center;
+    background: #f5ede6; /* Warna latar belakang tombol */
+    border: none;
+    border-radius: 20px;
+    padding: 1px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  
+}
+
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: -5px; /* Sedikit overlap agar menyatu */
+    z-index: 2;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.text {
+    background: #ff0080;
+    color: white;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 20px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Border / Elemen visual */
+.border {
+    padding: 0;
+    margin: 0;
+    filter: blur(20px); /* Efek blur langsung */
+   border-radius: 50px;
+}
+.border img{
+    height: 550px;
+    width: 400px;
+}
+
+.get{
+    /* padding-top: 90px; */
+    font-size: 75px;
+    text-align: center;
+    color: #FFFEEC;
+    padding-bottom: 22px;
+    background: transparent;
+    line-height: 0;
+    font-weight: bold;
+}
+
+/* footer */
+#footer {
+    /* Sesuaikan warna dengan gambar */
+    /* padding: 20px 80px; */
+    color: #000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 80px;
+    background-color: #FFFEEC; 
+}
+
+.footer-left .p {
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 50px;
+    background-color: #F5F5F5;
+    padding: 5px 10px;
+}
+.o{
+    color: #D9D9D9;
+    border-radius: 50px;
+    background-color: #D9D9D9;
+    padding-left: 10px;
+}
+
+ .contact-me {
+    margin-top: 15px;
+}
+
+.footer-left .copyright {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.footer-right {
+    text-align: left;
+}
+
+.footer-right p {
+    margin: 5px 0;
+    font-size: 16px;
+    
+}
+.footer-right .p-right{
+    font-weight: bold;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    /* HOME */
+    header{
+        width: 100%;
+        height: 15vh;
+    }
+    #home {
+        flex-direction: column;
+        transform: translate(0%, 0%);
+        margin-top: px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #home .box-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #home .box-home .box:nth-child(1) {
+        order: 2; /* teks pindah ke bawah */
+    }
+
+    #home .box-home .box:nth-child(2) {
+        order: 1; /* gambar pindah ke atas */
+    }
+
+    #home .box-home .box h1 {
+        font-size: 24px;
+    }
+
+    #home .box-home .box p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    #home .box-home .box:nth-child(2) img{
+        width: 350px;
+        height: auto;
+    }
+
+    .button-container {
+        width: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .button1, .button2 {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+   
+
+    /* GLIMPSE */
+    .judul h1 {
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+
+    .gambar img {
+        width: 300px;
+    }
+
+    /* BUTTON MORE INFO */
+    .button-moreinfo {
+        padding: 20px 0;
+    }
+
+    .custom-button .text {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* READ MY BLOG */
+    .read-my-blog {
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 80px;
+        gap: 10px;
+        text-align: center;
+    }
+    .read-my-blog .border {
+        display: none;
+    }
+    .text-blog {
+        padding: 10px 20px;
+    }
+
+    .text-blog h1 {
+        font-size: 40px;
+        padding: 10px 20px;
+    }
+
+    .text-blog h2 {
+        font-size: 24px;
+    }
+
+    .text-blog h3 {
+        font-size: 28px;
+    }
+
+    .text-blog p {
+        font-size: 18px;
+    }
+
+    .button-morearticles {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .custom-button2 .text {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+
+   
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .footer-right, .footer-left {
+        width: 100%;
+    }
+
+    .footer-right p, .footer-left .p {
+        font-size: 14px;
+    }
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .social-links a {
+        font-size: 14px;
+        margin: 5px 0; /* kasih jarak atas bawah, bukan kanan */
+        text-align: center;
+    }
+}
+
+/* HOME */
+@media (max-width: 576px) {
+    header {
+        width: 100%;
+        height: 15vh;
+    }
+
+    #home {
+        flex-direction: column;
+        transform: translate(0%, 0%);
+        margin-top: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #home .box-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #home .box-home .box:nth-child(1) {
+        order: 2; /* teks pindah ke bawah */
+    }
+
+    #home .box-home .box:nth-child(2) {
+        order: 1; /* gambar pindah ke atas */
+    }
+
+    #home .box-home .box h1 {
+        font-size: 24px;
+    }
+
+    #home .box-home .box p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    #home .box-home .box:nth-child(2) img{
+        width: 250px;
+        height: auto;
+    }
+
+    .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* menambahkan ini agar tombol rata tengah */
+        align-items: center;
+    }
+
+    .button1, .button2 {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* GLIMPSE */
+    .judul h1 {
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+
+    .gambar img {
+        width: 50%; /* sesuaikan ukuran gambar agar responsif */
+    }
+
+    /* BUTTON MORE INFO */
+    .button-moreinfo {
+        padding: 20px 0;
+    }
+
+    .custom-button .text {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* READ MY BLOG */
+    .read-my-blog {
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 80px;
+        gap: 10px;
+        text-align: center;
+    }
+    .read-my-blog .border {
+        display: none;
+    }
+    .text-blog {
+        padding: 10px 20px;
+    }
+
+    .text-blog h1 {
+        font-size: 40px;
+        padding: 10px 20px;
+    }
+
+    .text-blog h2 {
+        font-size: 24px;
+    }
+
+    .text-blog h3 {
+        font-size: 28px;
+    }
+
+    .text-blog p {
+        font-size: 18px;
+    }
+
+    .button-morearticles {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .custom-button2 .text {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .footer-right, .footer-left {
+        width: 100%;
+    }
+
+    .footer-right p, .footer-left .p {
+        font-size: 14px;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .social-links a {
+        font-size: 14px;
+        margin: 5px 0; /* kasih jarak atas bawah, bukan kanan */
+        text-align: center;
+    }
+}
+
+/* Ukuran Layar ≤ 468px */
+@media screen and (max-width: 468px) {
+
+    header {
+        width: 100%;
+        height: auto; /* Membuat tinggi header fleksibel */
+    }
+
+    #home {
+        flex-direction: column;
+        margin-top: 0;
+        text-align: center;
+        margin-bottom: 10px; /* Mengurangi margin bawah */
+    }
+
+    #home .box-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px; /* Mengurangi jarak antara elemen */
+    }
+
+    #home .box-home .box:nth-child(1) {
+        order: 2; /* teks pindah ke bawah */
+    }
+
+    #home .box-home .box:nth-child(2) {
+        order: 1; /* gambar pindah ke atas */
+    }
+
+    #home .box-home .box h1 {
+        font-size: 18px; /* Menyesuaikan ukuran font untuk layar kecil */
+    }
+
+    #home .box-home .box p {
+        font-size: 12px; /* Menyesuaikan ukuran font untuk layar kecil */
+        line-height: 1.4; /* Mengurangi line height agar lebih rapat */
+    }
+
+    #home .box-home .box:nth-child(2) img {
+        width: 180px; /* Menyesuaikan ukuran gambar untuk layar kecil */
+        height: auto;
+    }
+
+    .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button1, .button2 {
+        font-size: 12px; /* Mengurangi ukuran font tombol */
+        padding: 6px 12px; /* Menyesuaikan ukuran padding */
+    }
+
+    /* GLIMPSE */
+    .judul h1 {
+        font-size: 20px; /* Menyesuaikan ukuran judul */
+        padding: 8px 15px;
+    }
+
+    .gambar img {
+        width: 80%; /* Menyesuaikan ukuran gambar untuk layar kecil */
+    }
+
+    /* BUTTON MORE INFO */
+    .button-moreinfo {
+        padding: 15px 0; /* Menyesuaikan padding */
+    }
+
+    .custom-button .text {
+        padding: 8px 16px;
+        font-size: 12px; /* Menyesuaikan ukuran font tombol */
+    }
+
+    /* READ MY BLOG */
+    .read-my-blog {
+        flex-direction: column;
+        padding: 15px;
+        margin-bottom: 60px; /* Menyesuaikan margin bawah */
+        gap: 8px; /* Mengurangi jarak antar elemen */
+        text-align: center;
+    }
+    .read-my-blog .border {
+        display: none; /* Memastikan border tetap tersembunyi */
+    }
+    .text-blog {
+        padding: 8px 15px;
+    }
+
+    .text-blog h1 {
+        font-size: 28px; /* Menyesuaikan ukuran judul */
+        padding: 8px 15px;
+    }
+
+    .text-blog h2 {
+        font-size: 20px; /* Menyesuaikan ukuran subjudul */
+    }
+
+    .text-blog h3 {
+        font-size: 22px; /* Menyesuaikan ukuran subjudul */
+    }
+
+    .text-blog p {
+        font-size: 16px; /* Menyesuaikan ukuran paragraf */
+    }
+
+    .button-morearticles {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .custom-button2 .text {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 15px; /* Menyesuaikan padding footer */
+        gap: 15px; /* Mengurangi jarak antar elemen */
+    }
+
+    .footer-right, .footer-left {
+        width: 100%;
+    }
+    .get{
+        font-size: 30px;
+    }
+    .footer-right p, .footer-left .p {
+        font-size: 12px; /* Menyesuaikan ukuran font footer */
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .social-links a {
+        font-size: 12px; /* Menyesuaikan ukuran font social media */
+        margin: 5px 0; /* Memberikan jarak vertikal antar link */
+        text-align: center;
+    }
+}

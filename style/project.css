@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;700;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+:root {
+    --primary: #ec994b;
+    --white: #ffffff;
+    --bg: #000000;
+  }
+
+html {
+    /* font-size: 62.5%; */
+    scroll-behavior: smooth;
+    background-color: #000000;
+    
+  }
+
+  header{
+    width: 100%;
+    height: 30vh;
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.navigation{
+    width: 100%;
+    padding: 20px 0 25px 0;
+    
+}
+
+.navigation .box-navigation .box:nth-child(1) img{
+   width: 60px;
+   height: auto;
+}
+
+.navigation .box-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-left: 150px; */
+    align-items: center;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: -50px; /* Menggeser ke kiri */
+
+}
+.navigation .box-navigation .box:nth-child(2) ul li{
+    list-style-type: none;
+    margin-left: 25px;
+}
+.navigation .box-navigation .box:nth-child(2) ul li a{
+    text-decoration: none;
+    color: white; 
+}
+.navigation .box-navigation .box:nth-child(2) ul li a:hover{
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+    border: 1px solid white; /* Warna garis pinggir oval */
+    padding: 2px 8px; /* Jarak teks dengan garis pinggir */
+    border-radius: 50px; /* Membuat bentuk oval */
+    display: inline-block; 
+    
+}
+
+
+
+.navigation .box-navigation .box:nth-child(3) {
+    display: none;
+}
+.navigation .box-navigation .box:nth-child(2) ul li i{
+    display: none;
+}
+
+#project2{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translate(0%, -20%);
+}
+.box-project2{
+    width: 80%;
+    margin-inline: auto;
+}
+.box-project{
+    display: flex;
+    gap: 10px;
+}
+.garis-samping  {
+    color: #F5F5F5;
+    background-color: #F5F5F5;
+    border-radius: 50px;
+    padding: 13px 2px;
+    display: inline-block;
+}
+.head-judul-project h1{
+    background-color: #9C3165 ;
+    border-radius: 50px;
+    color: #F5F5F5;
+    /* font-weight: bold; */
+    padding: 1px 30px;
+    display: inline-block;
+    background: linear-gradient(to right, #EE4095, #801D64);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    font-size: 42px;
+}
+
+.p-project{
+    color: #F5F5F5;
+    padding: 20px 50px;
+    font-size: 17px;
+    text-align: left;
+    max-width: 1000px;
+}
+.button-project{
+    display: flex;
+    justify-content: center; /* Pusatkan horizontal */
+    align-items: center; /* Pusatkan vertikal */
+    gap: 10px;
+    
+    
+}
+.button-project2{
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #000000;
+    border: 1px solid white; /* Warna garis pinggir oval */
+    padding: 5px 20px; /* Jarak teks dengan garis pinggir */
+    border-radius: 50px; /* Membuat bentuk oval */
+    color: #F5F5F5;
+    font-size: 24px;
+}
+
+#box-pembatas{
+    margin-bottom: 60px;
+}
+.pembatas{
+    display: flex;
+    color: #F5F5F5;
+    background-color: #9C3165 ;
+    color: #F5F5F5;
+    font-style: italic;
+    background: linear-gradient(to right, #EE4095, #801D64);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    gap: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    
+}
+.pembatas img{
+    max-width: 25px;
+    height: auto;
+    
+}
+
+.judul p{
+    font-size: 40px; /* Sesuaikan ukuran font */
+    color: #EE4095; /* Warna teks */
+    text-align: center;
+    justify-content: center;
+    padding: 1px 30px; /* Ruang dalam */
+    border-radius: 25px; /* Membuat sudut membulat */
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    width: fit-content;
+    margin: auto;
+    /* margin-bottom: 20px; */
+    
+}
+.button-moreinfo p{
+    justify-content: center; /* Pusatkan tombol */
+    align-items: center;    
+    color: #F5F5F5;
+    font-size: 24px;
+}
+#glimpse{
+    margin-top: 30px;
+    background-color: #9C3165;
+    border-radius: 50px;
+    /* margin-bottom: 90px; */
+}
+#glimpse-2{
+    margin-top: 30px;
+    background-color: #D09B27;
+    border-radius: 50px;
+    margin-bottom: 100px;
+}
+.gambar2{
+    display: flex;
+    overflow-x: auto; /* Memungkinkan scroll horizontal */
+    white-space: nowrap; /* Mencegah gambar turun ke bawah */
+    width: 100%;
+    padding: 10px;
+    gap: 10px; /* Jarak antar gambar */
+    scrollbar-width: none; /* Sembunyikan scrollbar di Firefox */
+    /* margin-bottom: 35px; */
+    -ms-overflow-style: none; /* Sembunyikan scrollbar di IE/Edge */
+}
+
+.gambar2::-webkit-scrollbar {
+    display: none; /* Sembunyikan scrollbar di Chrome, Safari */
+}
+
+.gambar2 img{
+    width: 280px;
+    height: auto;
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+
+/* projeck 1 */
+#project{
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+    
+}
+.head-project{
+    padding-top: 30px;
+    color: #F5F5F5;
+    text-align: center;
+}
+.head-project h1{
+    font-size: 42px;
+}
+.sub-judul-project h1{
+    font-size: 25px;
+}
+.organisasi-project{
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: 100px;
+}
+.container-project{
+    display: flex;
+    margin-top: 80px;
+    gap: 15px;
+}
+.judul-organisasi-project{
+    color: #F5F5F5;
+    font-size: 30px;
+}
+.judul-konten-project p{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    line-height: 1;
+}
+
+.container-konten-project {
+    position: relative;
+    width: 500px; /* Sesuaikan dengan ukuran gambar */
+    overflow: visible;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.konten-project-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Supaya elemen pindah ke bawah jika tidak muat */
+    max-width: 100%; /* Pastikan tidak melebihi batas */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-project img {
+    width: 100%;
+    display: flex;
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+.judul-konten-project, 
+.button-project-kc {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.judul-konten-project {
+    top: 60px;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: "Montserrat";
+    padding: 0px 80px;
+}
+
+.button-project-kc {
+    position: absolute;
+    bottom: 10px; /* Menempel ke bawah */
+    left: 280px; /* Menempel ke kiri */
+    display: flex;
+    align-items: flex-start;
+    background-color: white; /* Warna latar belakang */
+    border-radius: 30px; /* Agar melengkung */
+    overflow: hidden;
+    max-width: 150px;
+}
+
+.button-project-kc button {
+
+    padding: 5px 3px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    
+}
+.button-1{
+    content: "";
+    width: 1px;
+    background-color: transparent;
+    color: #ffffff; /* Warna teks */
+   flex: -1;
+}
+.button-2{
+    background-color: #EE4095; /* Warna ungu gelap */
+    color: white;
+    flex: 1;
+}
+
+.button-project a {
+    text-decoration: none;
+    color: inherit;
+}

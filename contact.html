@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <title>nayako</title>
+</head>
+<body>
+  <header id="navigation">
+    <section class="navigation">
+      <div class="container">
+          <div class="box-navigation animate__animated animate__flipInX">
+              <div class="box">
+                  <img src="images/home/naya's logo.png" alt="">
+              </div>
+              <div class="box menu-navigation">
+                  <ul>
+                      <li>
+                          <i class="ri-home-3-line" style="color: white;"></i>
+                          <a href="home.html">Home</a>
+                      </li>
+                      <li>
+                          <i class="ri-information-2-line" style="color: white;"></i>
+                          <a href="about.html">About</a>
+                      </li>
+                      <li>
+                          <i class="ri-pages-line" style="color: white;"></i>
+                          <a href="project.html">Project</a>
+                      </li>
+                      <li>
+                          <i class="ri-news-line " style="color: white;"></i>
+                          <a href="blog.html">Blog</a>
+                      </li>
+                      <li>
+                          <i class="ri-phone-line" style="color: white;"></i>
+                          <a href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+  
+              </div>
+              <div class="box menu-bar" id="hamburger">
+                  <i class="ri-menu-3-fill" style="color: white;"></i>
+              </div>
+  
+          </div>
+  
+      </div>
+  
+    </section>
+</header>
+
+
+    <section id="contact">
+    <div class="contact-section">
+        <div class="contact-left">
+          <!-- Email dan tombol -->
+          <div class="email-bar">
+            <button>anayahfathur@gmail.com</button>
+            <button>Send Message</button>
+          </div>
+      
+          <!-- Nama dan deskripsi -->
+          <div class="intro">
+            <p>Dwi Anayah Fathur – <a href="#">Creative</a>, can guide your project from concept to visually stunning design.</p>
+          </div>
+      
+          <!-- Gambar di atas Let's Connect -->
+          <div class="logo-image">
+            <img src="images/contact/Group 76.png" alt="Logo Icon">
+          </div>
+      
+          <!-- Teks Let's Connect -->
+          <div class="connect-text">
+            <h2>Let’s Connect!</h2>
+            <div class="social-icons">
+              <a href="#"><img src="images/contact/ri_linkedin-fill.png" alt="LinkedIn"></a>
+              <a href="https://www.instagram.com/nayeako?igsh=MW1rMTE0YjE2cTAxNg=="><img src="images/contact/basil_instagram-outline.png" alt="Instagram"></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="contact-right">
+          <h2>What services <span class="span-contact">
+             </h2>
+             <h2>i can help you?</h2>
+            <hr>
+          <form class="service-form" action="https://formspree.io/f/myzwgvrv" method="POST">
+            <p>I’m interested in</p>
+            <div class="tags">
+              <span>Graphic Design</span>
+              <span>Social Media Management</span>
+              <span>Content Creation</span>
+              <span>Digital Marketing</span>
+              <span>Copywriter</span>
+      
+            </div>
+      
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+      
+            <button type="submit" class="submit-btn">SUBMIT</button>
+          </form>
+        </div>
+    </div>
+    </section>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer"></footer>
+
+
+
+
+
+
+
+</body>
+<script>
+    
+    const footer = document.getElementById('footer');
+    
+    fetch('./footer.html').then(snap => snap.text()).then(result =>{
+        footer.innerHTML = result;
+    })
+</script>
+<script src="script.js"></script>
+</html>
