@@ -119,6 +119,7 @@ html {
     font-size: 42px;
 }
 
+
 .p-project{
     color: #F5F5F5;
     padding: 20px 50px;
@@ -274,18 +275,22 @@ html {
 
 .container-konten-project {
     position: relative;
-    width: 500px; /* Sesuaikan dengan ukuran gambar */
+    width: 490px; /* Sesuaikan dengan ukuran gambar */
     overflow: visible;
     height: auto;
     display: flex;
     flex-direction: row;
+    transition: all 0.3s ease-in-out; /* Tambah ini */
+}
+.container-konten-project:hover {
+    transform: scale(1.05); /* Efek membesar 5% saat hover */
 }
 .konten-project-container{
     display: flex;
     gap: 20px;
     flex-wrap: wrap; /* Supaya elemen pindah ke bawah jika tidak muat */
     max-width: 100%; /* Pastikan tidak melebihi batas */
-    transition: transform 0.3s ease-in-out;
+    /* transition: transform 0.3s ease-in-out; */
 }
 
 .image-project img {
@@ -338,11 +343,18 @@ html {
     color: #ffffff; /* Warna teks */
    flex: -1;
 }
-.button-2{
-    background-color: #EE4095; /* Warna ungu gelap */
+.button-2 {
+    background-color: #EE4095; /* Warna pink */
     color: white;
     flex: 1;
+    transition: all 0.3s ease-in-out; /* ✨ Tambahkan ini */
 }
+
+.button-2:hover {
+    transform: scale(1.1); /* Membesar 10% saat hover */
+    background-color: #d73880; /* Sedikit gelap pas hover, opsional */
+}
+
 
 .button-project a {
     text-decoration: none;

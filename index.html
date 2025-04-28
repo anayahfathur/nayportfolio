@@ -11,15 +11,18 @@
     <link
      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Nayako</title>
 
 </head>
 <body>
     <header id="navigation">
         <section class="navigation">
           <div class="container">
-              <div class="box-navigation animate__animated animate__flipInX">
+              <div class="box-navigation">
                   <div class="box">
-                      <img src="images/home/naya's logo.png" alt="">
+                      <img src="images/index/naya's logo.png" alt="">
                   </div>
                   <div class="box menu-navigation">
                       <ul>
@@ -67,16 +70,16 @@
  <section id="home">
     <div class="container">
         <div class="box-home">
-            <div class="box"  data-aos="zoom-in" data-aos-duration="1000">
-                <h1>Hello, I'm Naya!</h1>
-                <p>Great design and digital strategy aren’t just about aesthetics—they’re about making bold moves. I help brands take creative risks that drive engagement and growth. Whether it's eye-catching visuals, compelling content, or a strong online presence, let’s turn ideas into impact!.</p>
-                <div class="button-container">
-                    <button class="button1"><a href="about.html">More About Me</a></button>
-                    <button class="button2"><a href="contact.html">Let’s Collaborate</a></button>
+            <div class="box">
+                <h1 class="animate__animated animate__fadeInLeft">Hello, I'm Naya!</h1>
+                <p class="animate__animated animate__fadeInLeft">Great design and digital strategy aren’t just about aesthetics—they’re about making bold moves. I help brands take creative risks that drive engagement and growth. Whether it's eye-catching visuals, compelling content, or a strong online presence, let’s turn ideas into impact!.</p>
+                <div class="button-container animate__animated animate__fadeInLeft">
+                    <button class="button1 animate__animated animate__fadeInLeft"><a href="about.html">More About Me</a></button>
+                    <button class="button2 animate__animated animate__fadeInLeft"><a href="contact.html">Let’s Collaborate</a></button>
                 </div>                
             </div>
 
-            <div class="box">
+            <div class="box animate__animated animate__fadeInRight">
                 <img src="images/index/photo.png" alt="">
             </div>
         </div>
@@ -87,7 +90,7 @@
 
 
  <!-- Glimpse -->
- <section class="glimpse">
+ <section class="glimpse" data-aos="fade-right" data-aos-duration="1000">
     <div class="judul"> <h1>Glimpse of My Work</h1>
         
     </div>
@@ -96,16 +99,17 @@
         <img src="images/index/Frame 2.png" alt="">
         <img src="images/index/Frame 3.png" alt="">
         <img src="images/index/Feeds Ransel Berdampak 1.png" alt="">
+        <img src="images/index/feed ig.png"  alt="">
     </div>
      <div class="button-moreinfo">
         <button class="custom-button">
             <img src="/images/index/mdi-light_arrow-right-circle.png" alt="Arrow Icon" class="icon">
-            <a href="project2.html"><span class="text">More Info</span></a>
+            <a href="project.html"><span class="text">More Info</span></a>
         </button>
     </div>
   </section>
 
-  <section class="read-my-blog">
+  <section class="read-my-blog" data-aos="fade-left" data-aos-duration="1000">
     <div class="text-blog">
         <h1>Read My Blog</h1>
         <h2>Featured</h2>
@@ -146,5 +150,8 @@
     
 </script>
 <script src="script.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>

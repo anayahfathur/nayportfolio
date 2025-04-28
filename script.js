@@ -18,3 +18,4 @@ window.onbeforeunload = () => {
         form.reset();
     }
 };
+

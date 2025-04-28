@@ -82,7 +82,7 @@ html {
 }
 
   #blog{
-    margin-top: 10px;
+    margin-top: 20px;
     width: 100%;
     align-items: center;
     position: relative;
@@ -157,6 +157,10 @@ html {
   position: relative;
   padding-bottom: 15px;
   padding-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.container-blog:hover {
+  transform: scale(1.05); /* Efek membesar 5% saat hover */
 }
 
 .text-header-blog span {

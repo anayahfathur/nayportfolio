@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>nayako</title>
 </head>
 <body>
@@ -71,7 +73,7 @@
           </div>
       
           <!-- Gambar di atas Let's Connect -->
-          <div class="logo-image">
+          <div class="logo-image" animate__animated animate__rotateOut>
             <img src="images/contact/Group 76.png" alt="Logo Icon">
           </div>
       
@@ -153,4 +155,8 @@
     })
 </script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>

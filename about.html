@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nayako</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,9 @@
      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Nayako</title>
 </head>
 <body>
     <header id="navigation">
@@ -63,18 +66,18 @@
     <div class="container">
         <div class="box-home">
             <div class="box">
-                <h1>Who am I? </h1>
-                <h1>Let’s Find Out!</h1>
-                <p>My name is Dwi Anayah Fathur.
+                <h1 class="animate__animated animate__fadeInLeft">Who am I? </h1>
+                <h1 class="animate__animated animate__fadeInLeft">Let’s Find Out!</h1>
+                <p class="animate__animated animate__fadeInLeft">My name is Dwi Anayah Fathur.
                     A Digital Business student at Universitas Negeri Makassar. Passionate about graphic design, digital marketing, social media management, and content writing. I’ve developed skills in designing, writing, and digital marketing to help organization, community, or brands grow and engage with their audiences.</p>
                 <br>
-            <div class="pengalaman">
-                <h2>30 +</h2>
-                <p>Project Completed</p>
+            <div class= "pengalaman">
+                <h2 class="animate__animated animate__fadeInUp">30 +</h2>
+                <p class="animate__animated animate__fadeInUp">Project Completed</p>
             </div>
             <div class="pengalaman2">
-                <h2>9 +</h2>
-                <p>Work and Organizational Experiences</p>
+                <h2 class="animate__animated animate__fadeInUp">9 +</h2>
+                <p class="animate__animated animate__fadeInUp">Work and Organizational Experiences</p>
             </div>
             <button class="custom-button">
                 <img src="/images/index/mdi-light_arrow-right-circle.png" alt="Arrow Icon" class="icon">
@@ -90,9 +93,10 @@
  </section>
 <!-- home -->
  <!-- Experiences -->
-    <section class="experience">
-        <div class="head-judul">
-        <h1>The Path that Lad Me Here</h1>
+    <section class="experience"> 
+        <div class="head-judul" data-aos="zoom-in" data-aos-duration="1000">
+        <h1>The Path that Lad Me Here</h1> 
+
         <div class="sub-judul">
             <p>Educational Background & My Experiences So Far</p>
         </div>
@@ -136,7 +140,7 @@
                     <p class="p-experiences"><span>O</span>Badan Pendapatan Daerah Kota Makassar Internship</p>
                     <p class="p-11">Staff of Pajak Hotel dan Hiburan </p>
                     <br>
-                    <p class="p-experiences"><span>O</span>Social Media Team Digital Business</p>
+                    <p class="p-experiences"><span>O</span>Social Media Team Bisnis Digital UNM</p>
                     <p class="p-11">Graphic Designer </p>
                     <br>
                     <p class="p-experiences"><span>O</span>Forum Litera</p>
@@ -168,7 +172,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-judul">
+        <div class="footer-judul" data-aos="zoom-in" data-aos-duration="1000">
             <h1>And many things wait to explore..</h1>
         </div>
     </section>
@@ -186,8 +190,8 @@
                 <img src="/images/about/VN logo.png" alt="" width="100px" height="auto">
             </div>
             <div class="content-tools1">..</div>
-            <div class="footer-tools">
-                <h4>Interested to See <u> <a href="project2.html">My Project?</a></u></h4>
+            <div class="footer-tools" data-aos="zoom-in-up"data-aos-duration="1000">
+                <h4>Interested to See <u> <a href="project.html">My Project?</a></u></h4>
             </div>
         </section>
 <!-- Tools end -->
@@ -211,4 +215,8 @@
     })
 </script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>
